@@ -1,0 +1,107 @@
+/* Theme variables */
+:root {
+    --bg-color: #fff;
+    --text-color: #333;
+    --nav-bg: rgba(0,0,0,0.7);
+    --card-bg: rgba(255,255,255,0.95);
+    --accent: #ff6600;
+    --btn-color: #fff;
+  }
+  .dark-theme {
+    --bg-color: #1e1e1e;
+    --text-color: #ddd;
+    --nav-bg: rgba(0,0,0,0.9);
+    --card-bg: rgba(30,30,30,0.95);
+    --accent: #ff9900;
+    --btn-color: #000;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://source.unsplash.com/1920x1080/?bus,road,sunset')
+                no-repeat center center/cover;
+    color: var(--text-color);
+  }
+  
+  .navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    background: var(--nav-bg); padding: 10px 20px;
+  }
+  .nav-links {
+    display: flex; gap: 15px; list-style: none; margin: 0;
+  }
+  .nav-links a {
+    color: #fff; text-decoration: none; padding: 5px 8px;
+    border-radius: 4px; transition: background .3s;
+  }
+  .nav-links a:hover { background: rgba(255,255,255,0.2); }
+  
+  /* Theme toggle button */
+  .theme-toggle {
+    background: none; border: none; font-size: 1.2rem;
+    cursor: pointer; color: #fff; margin-left: 10px;
+  }
+  
+  /* Login form container */
+  .login-form-container {
+    max-width: 360px;
+    margin: 100px auto;
+    padding: 24px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .login-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+  }
+  
+  /* Vertical form */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .login-form label {
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  .login-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .login-form input:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  
+  /* Submit button */
+  .btn {
+    margin-top: 24px;
+    padding: 12px;
+    background: var(--accent);
+    color: var(--btn-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity .3s;
+  }
+  .btn:hover { opacity: 0.9; }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 12px 0;
+    background: var(--nav-bg);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  

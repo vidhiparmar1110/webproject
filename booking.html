@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Ticket</title>
+  <link rel="stylesheet" href="booking.css"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">🚌 BusReserve</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="booking-form-container">
+      <h2>Book Your Ticket</h2>
+      <form id="bookingForm" class="booking-form">
+        <label for="from">From</label>
+        <input type="text" id="from" name="from" placeholder="Departure City" required />
+
+        <label for="to">To</label>
+        <input type="text" id="to" name="to" placeholder="Destination City" required />
+
+        <label for="date">Travel Date</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="bus">Select Bus</label>
+        <select id="bus" name="bus" required>
+          <option value="">-- Choose a Bus --</option>
+          <option value="Express101">Express 101</option>
+          <option value="Express202">Express 202</option>
+          <option value="Economy303">Economy 303</option>
+          <option value="NightRider404">Night Rider 404</option>
+        </select>
+
+        <label for="seats">Number of Seats</label>
+        <input type="number" id="seats" name="seats" min="1" placeholder="e.g., 2" required />
+
+        <button type="submit" class="btn">Book Now</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BusReserve. All rights reserved.</p>
+  </footer>
+
+  <script src="booking.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- booking.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Ticket</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">🚌 BusReserve</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="booking">
+      <h2>Book Your Ticket</h2>
+      <form>
+        <input type="text" placeholder="From" required>
+        <input type="text" placeholder="To" required>
+        <input type="date" required>
+        <select required>
+          <option value="">Select Bus</option>
+          <option value="express101">Express 101</option>
+        </select>
+        <input type="number" placeholder="No. of Seats" required>
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 BusReserve. All rights reserved.</p>
+  </footer>
+</body>
+</html> -->
